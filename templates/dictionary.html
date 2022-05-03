@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block menu %}
+{{ super() }}
+{% endblock %}
+{% block content %}
+<form  action="/dictionary" class="login" method="post">
+    {{ form.hidden_tag() }}
+    <p>{{ form.eng.label()}}</p> <p> {{ form.eng}} </p>
+    <p>{{ form.rus.label()}}</p> <p> {{ form.rus}}</p>
+    <p>{{ form.text.label()}} {{ form.text}}</p>
+    <p>{{form.submit()}}</p>
+<!--<p><label> eng </label> <input type="text" name="eng" value="" requied />-->
+<!--<p><label>rus: </label> <input type="text" name="rus" value="" requied />-->
+<!--<p><label>story</label> <textarea name="story" cols="40" rows="3"></textarea>-->
+<!--<input type="submit" value="Save word">-->
+</form>
+{% endblock %}
+

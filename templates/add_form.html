@@ -1,0 +1,17 @@
+{{ form.hidden_tag() }}
+{% for field in form if field.name not in ['csrf_token', 'remember', 'submit'] -%}
+
+
+         {{ field.label() }}<br>
+         {% if field.errors %}
+                   {{ field(class="invalid") }}
+         <span class="invalid-feedback">
+                   {% for e in field.errors %}
+                   {{ e }}
+                   {% endfor %}
+         </span>
+         {% else %}
+                   {{ field() }}<br>
+         {% endif %}
+{% endfor %}
+<br>

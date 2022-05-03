@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block menu %}
+{{ super() }}
+{% endblock %}
+
+{% block content %}
+       {% for word in words %}
+          <p class="for_rows">{{ word.eng }}</p>
+          <p class="for_story">{{ word.story }}</p>
+           {% endfor %}
+{% endblock %}
+
+

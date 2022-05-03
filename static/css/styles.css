@@ -1,0 +1,69 @@
+﻿.header {
+	height:100px;
+	color: white;
+	background-color: #800000;
+	text-align: center; 
+	font-size:45px;
+	font-family:cursive;
+}
+
+.heading{text-align: center; 
+	      font-size:25px;
+		  font-family:Andale Mono, monospace;}
+		  
+		  
+.for_text{text-align: left;
+          font-size:19px;
+		  font-style:italic;
+
+.flash {padding: 10px;}
+.flash.success {
+         border: 1px solid #21DB56;
+         background: #AEFFC5;
+}
+.flash.error {
+         border: 1px solid #FF4343;
+         background: #FF9C9C;
+}
+		  
+font-family:Bradley Hand, cursive;}
+
+.login {
+	
+background-color: #ccff33;
+width:400px;
+	height: 300px;
+margin-left:35%;
+margin-top: 5%;
+	border-color: coral;
+	border-radius:10%;
+	border-width: 3px 7px 7px 4px;
+	padding: 30px;
+	border-style: double;
+}
+
+.for_rows {
+text-align: center;
+font-size: 29px;
+text-transform: capitalize;
+padding-bottom: 5px;
+
+}
+.for_story {
+text-align: center;
+margin-left: 35%;
+background-color: #DEB887;
+width: 30%;
+font-weight: bold;
+font-size: 20px;
+}
+for_label {
+font-size: 20px;
+
+
+}
+
+
+
+
+           

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block menu %}
+{{ super() }}
+{% endblock %}
+{% block content %}
+<form action="/register" method="post" class="login">
+    {{ form.hidden_tag() }}
+    <p> {{form.firstname.label()}} {{form.firstname() }}</p>
+    <p> {{form.email.label()}} {{form.email()}}</p>
+    <p> {{form.password.label()}} {{form.password()}}</p>
+    <p> {{form.repeat_password.label()}} {{form.repeat_password()}}</p>
+    <p>{{form.submit()}}</p>
+
+</form>
+
+{% endblock %}
